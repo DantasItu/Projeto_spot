@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import SongItem from "./SongItem";
+import SongItem from "./SongItem.jsx";
 
 const songList = ({ songsArray }) => {
   const [items, setItems] = useState(5);
