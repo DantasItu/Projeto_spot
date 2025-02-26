@@ -1,6 +1,6 @@
-import { artistArray } from "../../front-end/src/assets/database/artists.js";
-import { songsArray2 } from "../../front-end/src/assets/database/temple.js";
-import { db } from "./connect.js";
+// import { artistArray } from "../../front-end/src/assets/database/artists.js";
+// import { songsArray2 } from "../../front-end/src/assets/database/temple.js";
+// import { db } from "./connect.js";
 
 // newArtistsArray
 // const newArtistArray = artistArray.map((currArtistOj) => {
@@ -11,17 +11,17 @@ import { db } from "./connect.js";
 // });
 
 // newSongsArray
-const newsongsArray = songsArray2.map((currsongsOj) => {
-  const newsongsObj = { ...currsongsOj };
+// const newsongsArray = songsArray2.map((currsongsOj) => {
+//   const newsongsObj = { ...currsongsOj };
 
-  return newsongsObj;
-});
+//   return newsongsObj;
+// });
 
-const responseSongs = await db.collection("songs").insertMany(newsongsArray);
+// const responseSongs = await db.collection("songs").insertMany(newsongsArray);
 
 // const responseArtists = await db
 //   .collection("artists")
 //   .insertMany(newArtistArray);
 
-console.log(responseSongs);
+// console.log(responseSongs);
 // console.log(responseArtists);
